@@ -59,7 +59,10 @@ Uniform within each bounded interval.
 - `code/reproduce_all.py`: one-command reproduction of tests, analyses,
   simulations, figures, and a machine-readable environment manifest.
 - `results/`: machine-readable analysis, simulation, and environment results.
-- `manuscript/`: revised manuscript and supplement sources, bibliography, figure, and compiled PDFs.
+- `manuscript/`: the single canonical Cambridge/RSM main-manuscript source and
+  compiled PDF, together with the supplement source, bibliography, figures,
+  and compiled supplement PDF. No separate free-format manuscript version is
+  maintained.
 
 ## Reproduce
 

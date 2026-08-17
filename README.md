@@ -154,8 +154,7 @@ its scale is incompatible with the common time-weighted Bq/m^3 metric.
 
 Repository URL: https://github.com/ChongWangStat/IntervalDRMA
 
-Archive the tagged GitHub release with Zenodo and insert the resulting DOI in
-`CITATION.cff` and the manuscript Data Availability Statement before submission.
+Versioned Zenodo archive: https://doi.org/10.5281/zenodo.21984414
 
 ## License
 

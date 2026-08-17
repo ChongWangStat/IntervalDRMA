@@ -42,8 +42,8 @@ same support-representation problem is not limited to environmental studies.
 The paper fits RSM’s focus on new, generally useful research-synthesis methods,
 simulation evaluation, software, and illustrative applications. The public
 repository contains analysis-ready workbooks, core software, deterministic
-tests, seeds, and machine-readable results. A permanent versioned archive DOI
-will be entered before submission. The National Pork Board funded data collection for
+tests, seeds, and machine-readable results. The permanent versioned archive is
+available at https://doi.org/10.5281/zenodo.21984414. The National Pork Board funded data collection for
 the underlying systematic review (grant 19-146) but had no role in this
 methodological manuscript; the authors declare no other competing interests.
 The manuscript is not under consideration elsewhere, and all authors approved

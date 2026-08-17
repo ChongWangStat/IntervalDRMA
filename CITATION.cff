@@ -17,6 +17,7 @@ authors:
   - family-names: O'Connor
     given-names: Annette M.
 repository-code: "https://github.com/ChongWangStat/IntervalDRMA"
+doi: "10.5281/zenodo.21984414"
 license: MIT
 version: 1.0.0
-date-released: 2026-08-16
+date-released: 2026-08-17

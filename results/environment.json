@@ -1,0 +1,60 @@
+{
+  "status": "complete",
+  "generated_utc": "2026-08-16T20:25:38.656939+00:00",
+  "elapsed_seconds": 688.2724515000009,
+  "operating_system": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.9",
+  "python_executable": "C:\\Users\\chwang\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+  "packages": {
+    "numpy": "2.3.4",
+    "scipy": "1.16.3",
+    "openpyxl": "3.1.5",
+    "matplotlib": "3.10.7"
+  },
+  "commands": [
+    [
+      "python",
+      "code/test_intervaldrma.py"
+    ],
+    [
+      "python",
+      "code/run_analysis.py",
+      "--output",
+      "results/analysis_results.json"
+    ],
+    [
+      "python",
+      "code/radon_example_analysis.py",
+      "--output",
+      "results/radon_example_results.json"
+    ],
+    [
+      "python",
+      "code/mixed_support_simulation.py",
+      "--replicates",
+      "5000",
+      "--output",
+      "results/mixed_support_simulation_results.json"
+    ],
+    [
+      "python",
+      "code/make_score_assumption_figure.py"
+    ],
+    [
+      "python",
+      "code/make_distance_density_figure.py"
+    ],
+    [
+      "python",
+      "code/make_support_to_design_figure.py"
+    ],
+    [
+      "python",
+      "code/make_support_fragility_figure.py",
+      "--results",
+      "results/analysis_results.json",
+      "--output",
+      "manuscript/images/Support_mapping_fragility.pdf"
+    ]
+  ]
+}

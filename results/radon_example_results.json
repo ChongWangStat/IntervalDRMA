@@ -1,0 +1,2620 @@
+{
+  "data_file": "radon_lung_cancer_contrasts.xlsx",
+  "outcome": "lung cancer",
+  "exposure": "time-weighted residential radon concentration in Bq/m^3",
+  "estimand": "change in log odds ratio per Bq/m^3 higher representative radon concentration",
+  "source_meta_analysis": "https://www.scielosp.org/pdf/bwho/2003.v81n10/732-738/en",
+  "reml_criterion_note": "The profiled REML criterion is an optimization diagnostic within a fixed design mapping and is not comparable across mappings that change the fixed-effects design vector.",
+  "distribution_sources": [
+    "https://www.unscear.org/docs/publications/2000/UNSCEAR_2000_Annex-B.pdf",
+    "https://www.who.int/publications/i/item/9789241547673",
+    "https://www.unscear.org/unscear/uploads/documents/unscear-reports/UNSCEAR_2024_Report_Vol.II.pdf"
+  ],
+  "excluded_study": "Letourneau et al. (1994), because Pavia et al. report only cumulative exposure rather than time-weighted Bq/m^3",
+  "first_stage": "Country-specific outcome-independent Lognormal working distributions. Historical survey parameters are primary and UNSCEAR 2024 parameters are a sensitivity analysis. Integer-rounded categories use contiguous half-unit cutpoints; decimal cutpoints are retained as reported. No exposure-category frequencies are used.",
+  "n_studies": 16,
+  "n_contrasts": 56,
+  "primary_historical_distribution": {
+    "rho": 0.5,
+    "n_studies": 16,
+    "n_contrasts": 56,
+    "random_effects": {
+      "beta": 0.0007813804858567781,
+      "se_beta": 0.00023860138191570562,
+      "beta_ci": [
+        0.0003137217773019951,
+        0.001249039194411561
+      ],
+      "beta_ci_study_t": [
+        0.00027281367880272096,
+        0.0012899472929108354
+      ],
+      "study_t_df": 15,
+      "tau": 0.00046908169717187935,
+      "tau_ci": [
+        0.0,
+        0.0012190989688315671
+      ],
+      "tau_ci_is_approximate_descriptive": true,
+      "reml_criterion_at_optimum": -51.83106859488596,
+      "optimization": {
+        "tau_scaled": 0.09880528061823883,
+        "criterion": -51.83106859488596,
+        "optimizer_success": true,
+        "optimizer_message": "Solution found.",
+        "adaptive_upper_scaled": 1.0,
+        "upper_expansions": 0,
+        "tau_at_zero_boundary": false,
+        "design_scale": 210.63554859194375,
+        "internal_standardization": "root mean square of design contrasts"
+      },
+      "cr2_sensitivity": {
+        "method": "CR2 cluster-sandwich sensitivity after whitening by the fitted marginal covariance; t critical value with K-1 degrees of freedom",
+        "beta": 0.0007813804858567781,
+        "se_beta": 0.00023691778050849026,
+        "df": 15,
+        "beta_ci": [
+          0.00027640219025703314,
+          0.0012863587814565232
+        ],
+        "minimum_leverage_complement_eigenvalue": 0.8154988746483389
+      },
+      "study_information_weights": [
+        {
+          "study_refid": 1,
+          "weight": 0.06093277934195803
+        },
+        {
+          "study_refid": 2,
+          "weight": 0.0039501188788606326
+        },
+        {
+          "study_refid": 3,
+          "weight": 0.08602374402198419
+        },
+        {
+          "study_refid": 4,
+          "weight": 0.06130306209655802
+        },
+        {
+          "study_refid": 5,
+          "weight": 0.18450112535166094
+        },
+        {
+          "study_refid": 6,
+          "weight": 0.12568955422720238
+        },
+        {
+          "study_refid": 7,
+          "weight": 0.027137537630937125
+        },
+        {
+          "study_refid": 8,
+          "weight": 0.11695828987666798
+        },
+        {
+          "study_refid": 9,
+          "weight": 0.025214280867099172
+        },
+        {
+          "study_refid": 10,
+          "weight": 0.06843126238269975
+        },
+        {
+          "study_refid": 11,
+          "weight": 0.000531831800973948
+        },
+        {
+          "study_refid": 12,
+          "weight": 0.02307751035916171
+        },
+        {
+          "study_refid": 13,
+          "weight": 0.05626371607954447
+        },
+        {
+          "study_refid": 14,
+          "weight": 0.012088152307329654
+        },
+        {
+          "study_refid": 15,
+          "weight": 0.12224061972358732
+        },
+        {
+          "study_refid": 16,
+          "weight": 0.025656415053774743
+        }
+      ],
+      "covariance_condition_numbers": [
+        {
+          "study_refid": 1,
+          "sampling_covariance_condition_number": 6.0041221866093135,
+          "marginal_covariance_condition_number": 7.204583368294661
+        },
+        {
+          "study_refid": 2,
+          "sampling_covariance_condition_number": 45.79717802452028,
+          "marginal_covariance_condition_number": 46.286781036415555
+        },
+        {
+          "study_refid": 3,
+          "sampling_covariance_condition_number": 5.271328339108623,
+          "marginal_covariance_condition_number": 4.1409774113871
+        },
+        {
+          "study_refid": 4,
+          "sampling_covariance_condition_number": 6.113701682219197,
+          "marginal_covariance_condition_number": 5.381866407857575
+        },
+        {
+          "study_refid": 5,
+          "sampling_covariance_condition_number": 15.975843611275128,
+          "marginal_covariance_condition_number": 35.26613122522472
+        },
+        {
+          "study_refid": 6,
+          "sampling_covariance_condition_number": 15.63852893000286,
+          "marginal_covariance_condition_number": 25.460670891745234
+        },
+        {
+          "study_refid": 7,
+          "sampling_covariance_condition_number": 3.016938578010565,
+          "marginal_covariance_condition_number": 3.0350636133938123
+        },
+        {
+          "study_refid": 8,
+          "sampling_covariance_condition_number": 44.94559858145657,
+          "marginal_covariance_condition_number": 59.435248096843715
+        },
+        {
+          "study_refid": 9,
+          "sampling_covariance_condition_number": 7.891284429338201,
+          "marginal_covariance_condition_number": 8.45859703587309
+        },
+        {
+          "study_refid": 10,
+          "sampling_covariance_condition_number": 6.0344903184777134,
+          "marginal_covariance_condition_number": 6.765982345559339
+        },
+        {
+          "study_refid": 11,
+          "sampling_covariance_condition_number": 6.688785613273997,
+          "marginal_covariance_condition_number": 6.696478791926443
+        },
+        {
+          "study_refid": 12,
+          "sampling_covariance_condition_number": 12.006491307063635,
+          "marginal_covariance_condition_number": 13.146880079938148
+        },
+        {
+          "study_refid": 13,
+          "sampling_covariance_condition_number": 4.977716434704818,
+          "marginal_covariance_condition_number": 5.620103011773486
+        },
+        {
+          "study_refid": 14,
+          "sampling_covariance_condition_number": 9.000776565549707,
+          "marginal_covariance_condition_number": 9.188730298589903
+        },
+        {
+          "study_refid": 15,
+          "sampling_covariance_condition_number": 7.766844011600637,
+          "marginal_covariance_condition_number": 11.250551844029674
+        },
+        {
+          "study_refid": 16,
+          "sampling_covariance_condition_number": 4.133824025789285,
+          "marginal_covariance_condition_number": 4.1947411911825885
+        }
+      ],
+      "parametric_bootstrap": {
+        "replicates": 2000,
+        "seed": 161803,
+        "conditional_on_support_means": true,
+        "tau_zero_boundary_rate": 0.217,
+        "basic_ci": [
+          0.0002856749418877066,
+          0.0012600214015893892
+        ],
+        "studentized_ci": [
+          0.00021141467246386404,
+          0.0013254500541734614
+        ],
+        "studentized_quantiles": [
+          -2.2802448332377856,
+          2.3887783415867836
+        ]
+      },
+      "or_per_100_bq_m3": 1.0812719164262308,
+      "or_ci_per_100_bq_m3": [
+        1.031869471267715,
+        1.1330395847603503
+      ],
+      "or_at_150_bq_m3": 1.124352228438961,
+      "or_ci_at_150_bq_m3": [
+        1.0481830813598025,
+        1.206056419032884
+      ],
+      "residual_diagnostics": {
+        "q_residual": 53.2535823109461,
+        "reference_df": 55,
+        "descriptive_p_value": 0.5416225202478371,
+        "max_abs_decorrelated_residual": 2.428770486209969,
+        "largest_residual": {
+          "study_refid": 16,
+          "within_study_index": 1,
+          "decorrelated_residual": 2.428770486209969
+        },
+        "interpretation": "Descriptive diagnostic only: tau, the working covariance, and support-distribution quantities may be estimated."
+      }
+    },
+    "fixed_effects": {
+      "beta": 0.0007995119333174738,
+      "se_beta": 0.00017238305494439524,
+      "beta_ci": [
+        0.00046164114562645913,
+        0.0011373827210084885
+      ],
+      "or_per_100_bq_m3": 1.0832341973326474,
+      "or_ci_per_100_bq_m3": [
+        1.0472462652174568,
+        1.1204588311682862
+      ]
+    }
+  },
+  "one_most_precise_contrast_per_study_sensitivity": {
+    "selection_rule": "One adjusted OR contrast with the smallest log-scale standard error was retained per study; rho=0 because one contrast remains per block",
+    "rho": 0.0,
+    "n_studies": 16,
+    "n_contrasts": 16,
+    "random_effects": {
+      "beta": 0.0015106110886689628,
+      "se_beta": 0.00041729616154467835,
+      "beta_ci": [
+        0.0006927106120413933,
+        0.0023285115652965324
+      ],
+      "beta_ci_study_t": [
+        0.0006211653747809084,
+        0.002400056802557017
+      ],
+      "study_t_df": 15,
+      "tau": 0.0,
+      "tau_ci": [
+        0.0,
+        0.0013092555429852564
+      ],
+      "tau_ci_is_approximate_descriptive": true,
+      "reml_criterion_at_optimum": -15.86862541321689,
+      "optimization": {
+        "tau_scaled": 0.0,
+        "criterion": -15.86862541321689,
+        "optimizer_success": true,
+        "optimizer_message": "Solution found.",
+        "adaptive_upper_scaled": 1.0,
+        "upper_expansions": 0,
+        "tau_at_zero_boundary": true,
+        "design_scale": 121.52574481240165,
+        "internal_standardization": "root mean square of design contrasts"
+      },
+      "cr2_sensitivity": {
+        "method": "CR2 cluster-sandwich sensitivity after whitening by the fitted marginal covariance; t critical value with K-1 degrees of freedom",
+        "beta": 0.0015106110886689628,
+        "se_beta": 0.00017496128346048857,
+        "df": 15,
+        "beta_ci": [
+          0.0011376899405466285,
+          0.0018835322367912971
+        ],
+        "minimum_leverage_complement_eigenvalue": 0.671385239076683
+      },
+      "study_information_weights": [
+        {
+          "study_refid": 1,
+          "weight": 0.023728082814994778
+        },
+        {
+          "study_refid": 2,
+          "weight": 0.006621638221637489
+        },
+        {
+          "study_refid": 3,
+          "weight": 0.328614760923317
+        },
+        {
+          "study_refid": 4,
+          "weight": 0.19672533294974504
+        },
+        {
+          "study_refid": 5,
+          "weight": 0.030170505998281978
+        },
+        {
+          "study_refid": 6,
+          "weight": 0.024273747711730225
+        },
+        {
+          "study_refid": 7,
+          "weight": 0.08845623856698111
+        },
+        {
+          "study_refid": 8,
+          "weight": 0.011090058486043816
+        },
+        {
+          "study_refid": 9,
+          "weight": 0.005693513319109522
+        },
+        {
+          "study_refid": 10,
+          "weight": 0.00900143190478653
+        },
+        {
+          "study_refid": 11,
+          "weight": 0.0001376061749614758
+        },
+        {
+          "study_refid": 12,
+          "weight": 0.020653199232058456
+        },
+        {
+          "study_refid": 13,
+          "weight": 0.005564726407492272
+        },
+        {
+          "study_refid": 14,
+          "weight": 0.0013123039312424424
+        },
+        {
+          "study_refid": 15,
+          "weight": 0.2472542544470492
+        },
+        {
+          "study_refid": 16,
+          "weight": 0.0007025989105686909
+        }
+      ],
+      "covariance_condition_numbers": [
+        {
+          "study_refid": 1,
+          "sampling_covariance_condition_number": 1.0,
+          "marginal_covariance_condition_number": 1.0
+        },
+        {
+          "study_refid": 2,
+          "sampling_covariance_condition_number": 1.0,
+          "marginal_covariance_condition_number": 1.0
+        },
+        {
+          "study_refid": 3,
+          "sampling_covariance_condition_number": 1.0,
+          "marginal_covariance_condition_number": 1.0
+        },
+        {
+          "study_refid": 4,
+          "sampling_covariance_condition_number": 1.0,
+          "marginal_covariance_condition_number": 1.0
+        },
+        {
+          "study_refid": 5,
+          "sampling_covariance_condition_number": 1.0,
+          "marginal_covariance_condition_number": 1.0
+        },
+        {
+          "study_refid": 6,
+          "sampling_covariance_condition_number": 1.0,
+          "marginal_covariance_condition_number": 1.0
+        },
+        {
+          "study_refid": 7,
+          "sampling_covariance_condition_number": 1.0,
+          "marginal_covariance_condition_number": 1.0
+        },
+        {
+          "study_refid": 8,
+          "sampling_covariance_condition_number": 1.0,
+          "marginal_covariance_condition_number": 1.0
+        },
+        {
+          "study_refid": 9,
+          "sampling_covariance_condition_number": 1.0,
+          "marginal_covariance_condition_number": 1.0
+        },
+        {
+          "study_refid": 10,
+          "sampling_covariance_condition_number": 1.0,
+          "marginal_covariance_condition_number": 1.0
+        },
+        {
+          "study_refid": 11,
+          "sampling_covariance_condition_number": 1.0,
+          "marginal_covariance_condition_number": 1.0
+        },
+        {
+          "study_refid": 12,
+          "sampling_covariance_condition_number": 1.0,
+          "marginal_covariance_condition_number": 1.0
+        },
+        {
+          "study_refid": 13,
+          "sampling_covariance_condition_number": 1.0,
+          "marginal_covariance_condition_number": 1.0
+        },
+        {
+          "study_refid": 14,
+          "sampling_covariance_condition_number": 1.0,
+          "marginal_covariance_condition_number": 1.0
+        },
+        {
+          "study_refid": 15,
+          "sampling_covariance_condition_number": 1.0,
+          "marginal_covariance_condition_number": 1.0
+        },
+        {
+          "study_refid": 16,
+          "sampling_covariance_condition_number": 1.0,
+          "marginal_covariance_condition_number": 1.0
+        }
+      ],
+      "or_per_100_bq_m3": 1.1630677296613294,
+      "or_ci_per_100_bq_m3": [
+        1.0717266733023596,
+        1.2621935960699218
+      ],
+      "or_at_150_bq_m3": 1.2543175794535886,
+      "or_ci_at_150_bq_m3": [
+        1.1094968139817907,
+        1.4180415574876366
+      ],
+      "residual_diagnostics": {
+        "q_residual": 13.620059472626057,
+        "reference_df": 15,
+        "descriptive_p_value": 0.5545176597700283,
+        "max_abs_decorrelated_residual": 2.3835277736035136,
+        "largest_residual": {
+          "study_refid": 16,
+          "within_study_index": 1,
+          "decorrelated_residual": 2.3835277736035136
+        },
+        "interpretation": "Descriptive diagnostic only: tau, the working covariance, and support-distribution quantities may be estimated."
+      }
+    },
+    "fixed_effects": {
+      "beta": 0.0015106110886689633,
+      "se_beta": 0.00041729616154467835,
+      "beta_ci": [
+        0.0006927106120413937,
+        0.002328511565296533
+      ],
+      "or_per_100_bq_m3": 1.1630677296613297,
+      "or_ci_per_100_bq_m3": [
+        1.0717266733023596,
+        1.2621935960699218
+      ]
+    }
+  },
+  "correlation_sensitivity": [
+    {
+      "rho": 0.0,
+      "n_studies": 16,
+      "n_contrasts": 56,
+      "random_effects": {
+        "beta": 0.0010310973995355695,
+        "se_beta": 0.0003016894584490471,
+        "beta_ci": [
+          0.0004397860609754371,
+          0.0016224087380957018
+        ],
+        "beta_ci_study_t": [
+          0.0003880615404243098,
+          0.0016741332586468292
+        ],
+        "study_t_df": 15,
+        "tau": 0.0008087745975020481,
+        "tau_ci": [
+          8.884344326851811e-05,
+          0.0018033788423792764
+        ],
+        "tau_ci_is_approximate_descriptive": true,
+        "reml_criterion_at_optimum": -43.59067838187803,
+        "optimization": {
+          "tau_scaled": 0.1703566810320724,
+          "criterion": -43.59067838187803,
+          "optimizer_success": true,
+          "optimizer_message": "Solution found.",
+          "adaptive_upper_scaled": 1.0,
+          "upper_expansions": 0,
+          "tau_at_zero_boundary": false,
+          "design_scale": 210.63554859194375,
+          "internal_standardization": "root mean square of design contrasts"
+        },
+        "cr2_sensitivity": {
+          "method": "CR2 cluster-sandwich sensitivity after whitening by the fitted marginal covariance; t critical value with K-1 degrees of freedom",
+          "beta": 0.0010310973995355695,
+          "se_beta": 0.00029882667100546276,
+          "df": 15,
+          "beta_ci": [
+            0.0003941634274199706,
+            0.0016680313716511683
+          ],
+          "minimum_leverage_complement_eigenvalue": 0.8757876555352997
+        },
+        "study_information_weights": [
+          {
+            "study_refid": 1,
+            "weight": 0.07604947054527042
+          },
+          {
+            "study_refid": 2,
+            "weight": 0.011563626634750626
+          },
+          {
+            "study_refid": 3,
+            "weight": 0.07934018142594992
+          },
+          {
+            "study_refid": 4,
+            "weight": 0.06349459500170877
+          },
+          {
+            "study_refid": 5,
+            "weight": 0.12421234446470042
+          },
+          {
+            "study_refid": 6,
+            "weight": 0.10983270305447083
+          },
+          {
+            "study_refid": 7,
+            "weight": 0.03714097801928645
+          },
+          {
+            "study_refid": 8,
+            "weight": 0.10469775845855335
+          },
+          {
+            "study_refid": 9,
+            "weight": 0.03842282066179398
+          },
+          {
+            "study_refid": 10,
+            "weight": 0.07816264101468472
+          },
+          {
+            "study_refid": 11,
+            "weight": 0.0010630687776720694
+          },
+          {
+            "study_refid": 12,
+            "weight": 0.04600958508851726
+          },
+          {
+            "study_refid": 13,
+            "weight": 0.06265647992695302
+          },
+          {
+            "study_refid": 14,
+            "weight": 0.022200396686574413
+          },
+          {
+            "study_refid": 15,
+            "weight": 0.11418550030459862
+          },
+          {
+            "study_refid": 16,
+            "weight": 0.03096784993451509
+          }
+        ],
+        "covariance_condition_numbers": [
+          {
+            "study_refid": 1,
+            "sampling_covariance_condition_number": 2.3238124366833612,
+            "marginal_covariance_condition_number": 4.625257349613988
+          },
+          {
+            "study_refid": 2,
+            "sampling_covariance_condition_number": 28.01240470272708,
+            "marginal_covariance_condition_number": 28.201887152609984
+          },
+          {
+            "study_refid": 3,
+            "sampling_covariance_condition_number": 1.8463285824519284,
+            "marginal_covariance_condition_number": 1.6762606553377215
+          },
+          {
+            "study_refid": 4,
+            "sampling_covariance_condition_number": 1.4779966224088201,
+            "marginal_covariance_condition_number": 1.6966788552492282
+          },
+          {
+            "study_refid": 5,
+            "sampling_covariance_condition_number": 6.94961484342642,
+            "marginal_covariance_condition_number": 45.188275657700515
+          },
+          {
+            "study_refid": 6,
+            "sampling_covariance_condition_number": 6.435351713102923,
+            "marginal_covariance_condition_number": 24.80649437087661
+          },
+          {
+            "study_refid": 7,
+            "sampling_covariance_condition_number": 1.1121031247581288,
+            "marginal_covariance_condition_number": 1.2596639117208666
+          },
+          {
+            "study_refid": 8,
+            "sampling_covariance_condition_number": 21.33559298478587,
+            "marginal_covariance_condition_number": 48.05431650259026
+          },
+          {
+            "study_refid": 9,
+            "sampling_covariance_condition_number": 3.5966261355280076,
+            "marginal_covariance_condition_number": 4.665343426793846
+          },
+          {
+            "study_refid": 10,
+            "sampling_covariance_condition_number": 1.4716720028183161,
+            "marginal_covariance_condition_number": 3.149363206217944
+          },
+          {
+            "study_refid": 11,
+            "sampling_covariance_condition_number": 2.5614827690480944,
+            "marginal_covariance_condition_number": 2.575121898977409
+          },
+          {
+            "study_refid": 12,
+            "sampling_covariance_condition_number": 6.25343351364588,
+            "marginal_covariance_condition_number": 7.703535533154155
+          },
+          {
+            "study_refid": 13,
+            "sampling_covariance_condition_number": 1.733219790422804,
+            "marginal_covariance_condition_number": 3.03732219850966
+          },
+          {
+            "study_refid": 14,
+            "sampling_covariance_condition_number": 2.944502557021868,
+            "marginal_covariance_condition_number": 3.319412872048384
+          },
+          {
+            "study_refid": 15,
+            "sampling_covariance_condition_number": 1.8161733209160726,
+            "marginal_covariance_condition_number": 7.133717621351563
+          },
+          {
+            "study_refid": 16,
+            "sampling_covariance_condition_number": 1.0941088751741614,
+            "marginal_covariance_condition_number": 1.405603018995744
+          }
+        ],
+        "or_per_100_bq_m3": 1.1086130615467036,
+        "or_ci_per_100_bq_m3": [
+          1.0449599988770168,
+          1.1761435093714063
+        ],
+        "or_at_150_bq_m3": 1.1672664058857423,
+        "or_ci_at_150_bq_m3": [
+          1.0681924374087473,
+          1.2755294033111086
+        ],
+        "residual_diagnostics": {
+          "q_residual": 48.20679969317237,
+          "reference_df": 55,
+          "descriptive_p_value": 0.729790526613528,
+          "max_abs_decorrelated_residual": 2.4108071878462116,
+          "largest_residual": {
+            "study_refid": 16,
+            "within_study_index": 1,
+            "decorrelated_residual": 2.4108071878462116
+          },
+          "interpretation": "Descriptive diagnostic only: tau, the working covariance, and support-distribution quantities may be estimated."
+        }
+      },
+      "fixed_effects": {
+        "beta": 0.0009304266738517317,
+        "se_beta": 0.0001557458543253481,
+        "beta_ci": [
+          0.0006251647993740495,
+          0.001235688548329414
+        ],
+        "or_per_100_bq_m3": 1.0975085620896354,
+        "or_ci_per_100_bq_m3": [
+          1.0645120018644632,
+          1.13152791302528
+        ]
+      }
+    },
+    {
+      "rho": 0.25,
+      "n_studies": 16,
+      "n_contrasts": 56,
+      "random_effects": {
+        "beta": 0.0008724976895995168,
+        "se_beta": 0.00024450211049261155,
+        "beta_ci": [
+          0.0003932735530339982,
+          0.0013517218261650354
+        ],
+        "beta_ci_study_t": [
+          0.00035135377730174456,
+          0.001393641601897289
+        ],
+        "study_t_df": 15,
+        "tau": 0.0004778291955179519,
+        "tau_ci": [
+          0.0,
+          0.0013165629625745093
+        ],
+        "tau_ci_is_approximate_descriptive": true,
+        "reml_criterion_at_optimum": -48.74957885696411,
+        "optimization": {
+          "tau_scaled": 0.10064781473117095,
+          "criterion": -48.74957885696411,
+          "optimizer_success": true,
+          "optimizer_message": "Solution found.",
+          "adaptive_upper_scaled": 1.0,
+          "upper_expansions": 0,
+          "tau_at_zero_boundary": false,
+          "design_scale": 210.63554859194375,
+          "internal_standardization": "root mean square of design contrasts"
+        },
+        "cr2_sensitivity": {
+          "method": "CR2 cluster-sandwich sensitivity after whitening by the fitted marginal covariance; t critical value with K-1 degrees of freedom",
+          "beta": 0.0008724976895995168,
+          "se_beta": 0.00024188482260924392,
+          "df": 15,
+          "beta_ci": [
+            0.00035693239437134636,
+            0.001388062984827687
+          ],
+          "minimum_leverage_complement_eigenvalue": 0.8166964866200586
+        },
+        "study_information_weights": [
+          {
+            "study_refid": 1,
+            "weight": 0.0648252612907352
+          },
+          {
+            "study_refid": 2,
+            "weight": 0.005438348535840528
+          },
+          {
+            "study_refid": 3,
+            "weight": 0.07943600826265654
+          },
+          {
+            "study_refid": 4,
+            "weight": 0.05485537312804189
+          },
+          {
+            "study_refid": 5,
+            "weight": 0.18330351337994152
+          },
+          {
+            "study_refid": 6,
+            "weight": 0.12858792179091105
+          },
+          {
+            "study_refid": 7,
+            "weight": 0.02730349515017489
+          },
+          {
+            "study_refid": 8,
+            "weight": 0.11487100997087056
+          },
+          {
+            "study_refid": 9,
+            "weight": 0.025729330665400774
+          },
+          {
+            "study_refid": 10,
+            "weight": 0.06761125228722138
+          },
+          {
+            "study_refid": 11,
+            "weight": 0.0005602344942626396
+          },
+          {
+            "study_refid": 12,
+            "weight": 0.0284285345558653
+          },
+          {
+            "study_refid": 13,
+            "weight": 0.053240017882781064
+          },
+          {
+            "study_refid": 14,
+            "weight": 0.012339841607939439
+          },
+          {
+            "study_refid": 15,
+            "weight": 0.13071560363595394
+          },
+          {
+            "study_refid": 16,
+            "weight": 0.02275425336140323
+          }
+        ],
+        "covariance_condition_numbers": [
+          {
+            "study_refid": 1,
+            "sampling_covariance_condition_number": 3.2649586739160736,
+            "marginal_covariance_condition_number": 4.285636906556508
+          },
+          {
+            "study_refid": 2,
+            "sampling_covariance_condition_number": 31.974521987011737,
+            "marginal_covariance_condition_number": 32.26487472200235
+          },
+          {
+            "study_refid": 3,
+            "sampling_covariance_condition_number": 2.7794483867245785,
+            "marginal_covariance_condition_number": 2.350716925081686
+          },
+          {
+            "study_refid": 4,
+            "sampling_covariance_condition_number": 2.899092431289576,
+            "marginal_covariance_condition_number": 2.679021583319089
+          },
+          {
+            "study_refid": 5,
+            "sampling_covariance_condition_number": 9.512866289208423,
+            "marginal_covariance_condition_number": 24.699295868703544
+          },
+          {
+            "study_refid": 6,
+            "sampling_covariance_condition_number": 8.665782316565705,
+            "marginal_covariance_condition_number": 16.473298813076255
+          },
+          {
+            "study_refid": 7,
+            "sampling_covariance_condition_number": 1.6853835963205535,
+            "marginal_covariance_condition_number": 1.7366260957457782
+          },
+          {
+            "study_refid": 8,
+            "sampling_covariance_condition_number": 27.139704509259726,
+            "marginal_covariance_condition_number": 38.3149939831657
+          },
+          {
+            "study_refid": 9,
+            "sampling_covariance_condition_number": 4.59563030891133,
+            "marginal_covariance_condition_number": 5.083017692605847
+          },
+          {
+            "study_refid": 10,
+            "sampling_covariance_condition_number": 2.857532742371286,
+            "marginal_covariance_condition_number": 3.4764087434338093
+          },
+          {
+            "study_refid": 11,
+            "sampling_covariance_condition_number": 3.6766459088112144,
+            "marginal_covariance_condition_number": 3.683617043552723
+          },
+          {
+            "study_refid": 12,
+            "sampling_covariance_condition_number": 7.541383238660455,
+            "marginal_covariance_condition_number": 8.356187353994825
+          },
+          {
+            "study_refid": 13,
+            "sampling_covariance_condition_number": 2.6000428321476257,
+            "marginal_covariance_condition_number": 3.1352794816840954
+          },
+          {
+            "study_refid": 14,
+            "sampling_covariance_condition_number": 4.524497909607269,
+            "marginal_covariance_condition_number": 4.7075722218794365
+          },
+          {
+            "study_refid": 15,
+            "sampling_covariance_condition_number": 3.523679748345873,
+            "marginal_covariance_condition_number": 5.990371449535527
+          },
+          {
+            "study_refid": 16,
+            "sampling_covariance_condition_number": 2.0715101046127384,
+            "marginal_covariance_condition_number": 2.1376875112133136
+          }
+        ],
+        "or_per_100_bq_m3": 1.091169185877759,
+        "or_ci_per_100_bq_m3": [
+          1.0401109137500586,
+          1.1447338706564596
+        ],
+        "or_at_150_bq_m3": 1.1398248992270854,
+        "or_ci_at_150_bq_m3": [
+          1.0607657287635934,
+          1.2247763720763838
+        ],
+        "residual_diagnostics": {
+          "q_residual": 48.40487842062603,
+          "reference_df": 55,
+          "descriptive_p_value": 0.7229399568678414,
+          "max_abs_decorrelated_residual": 2.4229448524957267,
+          "largest_residual": {
+            "study_refid": 16,
+            "within_study_index": 1,
+            "decorrelated_residual": 2.4229448524957267
+          },
+          "interpretation": "Descriptive diagnostic only: tau, the working covariance, and support-distribution quantities may be estimated."
+        }
+      },
+      "fixed_effects": {
+        "beta": 0.0008637847901865879,
+        "se_beta": 0.00017775445604629355,
+        "beta_ci": [
+          0.0005153860563358525,
+          0.0012121835240373232
+        ],
+        "or_per_100_bq_m3": 1.090218875200041,
+        "or_ci_per_100_bq_m3": [
+          1.0528898329866305,
+          1.1288713772369907
+        ]
+      }
+    },
+    {
+      "rho": 0.75,
+      "n_studies": 16,
+      "n_contrasts": 56,
+      "random_effects": {
+        "beta": 0.0006429935542856076,
+        "se_beta": 0.00025765119129107956,
+        "beta_ci": [
+          0.00013799721935509165,
+          0.0011479898892161233
+        ],
+        "beta_ci_study_t": [
+          9.382303969541778e-05,
+          0.0011921640688757973
+        ],
+        "study_t_df": 15,
+        "tau": 0.000674017397215384,
+        "tau_ci": [
+          0.00022620654591027394,
+          0.001387806693591127
+        ],
+        "tau_ci_is_approximate_descriptive": true,
+        "reml_criterion_at_optimum": -49.79958091906352,
+        "optimization": {
+          "tau_scaled": 0.14197202422297647,
+          "criterion": -49.79958091906352,
+          "optimizer_success": true,
+          "optimizer_message": "Solution found.",
+          "adaptive_upper_scaled": 1.0,
+          "upper_expansions": 0,
+          "tau_at_zero_boundary": false,
+          "design_scale": 210.63554859194375,
+          "internal_standardization": "root mean square of design contrasts"
+        },
+        "cr2_sensitivity": {
+          "method": "CR2 cluster-sandwich sensitivity after whitening by the fitted marginal covariance; t critical value with K-1 degrees of freedom",
+          "beta": 0.0006429935542856076,
+          "se_beta": 0.00025685723964378234,
+          "df": 15,
+          "beta_ci": [
+            9.551530757324553e-05,
+            0.0011904718009979696
+          ],
+          "minimum_leverage_complement_eigenvalue": 0.8696099215194951
+        },
+        "study_information_weights": [
+          {
+            "study_refid": 1,
+            "weight": 0.06742558715594169
+          },
+          {
+            "study_refid": 2,
+            "weight": 0.003767378020302987
+          },
+          {
+            "study_refid": 3,
+            "weight": 0.09261808775155723
+          },
+          {
+            "study_refid": 4,
+            "weight": 0.07722072611555415
+          },
+          {
+            "study_refid": 5,
+            "weight": 0.13039007848050518
+          },
+          {
+            "study_refid": 6,
+            "weight": 0.1086541806184625
+          },
+          {
+            "study_refid": 7,
+            "weight": 0.03651110745481437
+          },
+          {
+            "study_refid": 8,
+            "weight": 0.10743497561676298
+          },
+          {
+            "study_refid": 9,
+            "weight": 0.03568195144532098
+          },
+          {
+            "study_refid": 10,
+            "weight": 0.0786461105685172
+          },
+          {
+            "study_refid": 11,
+            "weight": 0.0008612392412723604
+          },
+          {
+            "study_refid": 12,
+            "weight": 0.025437591824230592
+          },
+          {
+            "study_refid": 13,
+            "weight": 0.0700906736333652
+          },
+          {
+            "study_refid": 14,
+            "weight": 0.01932187406700434
+          },
+          {
+            "study_refid": 15,
+            "weight": 0.10521295682495646
+          },
+          {
+            "study_refid": 16,
+            "weight": 0.04072548118143178
+          }
+        ],
+        "covariance_condition_numbers": [
+          {
+            "study_refid": 1,
+            "sampling_covariance_condition_number": 14.49169588536034,
+            "marginal_covariance_condition_number": 18.213831321189545
+          },
+          {
+            "study_refid": 2,
+            "sampling_covariance_condition_number": 92.11542235117321,
+            "marginal_covariance_condition_number": 94.16115562511342
+          },
+          {
+            "study_refid": 3,
+            "sampling_covariance_condition_number": 12.89994673477132,
+            "marginal_covariance_condition_number": 10.05443880293232
+          },
+          {
+            "study_refid": 4,
+            "sampling_covariance_condition_number": 15.805013743054545,
+            "marginal_covariance_condition_number": 14.196787572101787
+          },
+          {
+            "study_refid": 5,
+            "sampling_covariance_condition_number": 36.71806229595572,
+            "marginal_covariance_condition_number": 112.23184128538152
+          },
+          {
+            "study_refid": 6,
+            "sampling_covariance_condition_number": 37.70614637557434,
+            "marginal_covariance_condition_number": 73.6912522325898
+          },
+          {
+            "study_refid": 7,
+            "sampling_covariance_condition_number": 7.026365330010361,
+            "marginal_covariance_condition_number": 6.4872873504467785
+          },
+          {
+            "study_refid": 8,
+            "sampling_covariance_condition_number": 102.81945889433804,
+            "marginal_covariance_condition_number": 158.58285036478958
+          },
+          {
+            "study_refid": 9,
+            "sampling_covariance_condition_number": 18.43136516861494,
+            "marginal_covariance_condition_number": 19.968155514804913
+          },
+          {
+            "study_refid": 10,
+            "sampling_covariance_condition_number": 15.607101668896584,
+            "marginal_covariance_condition_number": 18.52232327350138
+          },
+          {
+            "study_refid": 11,
+            "sampling_covariance_condition_number": 16.003106009549224,
+            "marginal_covariance_condition_number": 16.01452469481766
+          },
+          {
+            "study_refid": 12,
+            "sampling_covariance_condition_number": 26.718604282754004,
+            "marginal_covariance_condition_number": 30.656267824519695
+          },
+          {
+            "study_refid": 13,
+            "sampling_covariance_condition_number": 12.259563017927029,
+            "marginal_covariance_condition_number": 14.732175417205301
+          },
+          {
+            "study_refid": 14,
+            "sampling_covariance_condition_number": 22.725996981052205,
+            "marginal_covariance_condition_number": 22.943697334204323
+          },
+          {
+            "study_refid": 15,
+            "sampling_covariance_condition_number": 20.57158063118828,
+            "marginal_covariance_condition_number": 35.20592999024339
+          },
+          {
+            "study_refid": 16,
+            "sampling_covariance_condition_number": 10.326674205969242,
+            "marginal_covariance_condition_number": 10.608560446775888
+          }
+        ],
+        "or_per_100_bq_m3": 1.0664115870814164,
+        "or_ci_per_100_bq_m3": [
+          1.0138953775989807,
+          1.1216479512458215
+        ],
+        "or_at_150_bq_m3": 1.1012534522860522,
+        "or_ci_at_150_bq_m3": [
+          1.020915305151904,
+          1.1879135909236855
+        ],
+        "residual_diagnostics": {
+          "q_residual": 75.24450001573294,
+          "reference_df": 55,
+          "descriptive_p_value": 0.03625288873855991,
+          "max_abs_decorrelated_residual": 2.8342797967317694,
+          "largest_residual": {
+            "study_refid": 14,
+            "within_study_index": 4,
+            "decorrelated_residual": -2.8342797967317694
+          },
+          "interpretation": "Descriptive diagnostic only: tau, the working covariance, and support-distribution quantities may be estimated."
+        }
+      },
+      "fixed_effects": {
+        "beta": 0.0007348516117431225,
+        "se_beta": 0.00013824905902005437,
+        "beta_ci": [
+          0.00046388345606381595,
+          0.0010058197674224292
+        ],
+        "or_per_100_bq_m3": 1.0762525662291744,
+        "or_ci_per_100_bq_m3": [
+          1.047481116670064,
+          1.1058142890414813
+        ]
+      }
+    },
+    {
+      "rho": 0.9,
+      "n_studies": 16,
+      "n_contrasts": 56,
+      "random_effects": {
+        "beta": 0.000342209155523219,
+        "se_beta": 0.0003272435589991398,
+        "beta_ci": [
+          -0.000299188220115095,
+          0.0009836065311615329
+        ],
+        "beta_ci_study_t": [
+          -0.00035529397959271306,
+          0.0010397122906391511
+        ],
+        "study_t_df": 15,
+        "tau": 0.0010901944222417397,
+        "tau_ci": [
+          0.0006103297000795888,
+          0.001995126039930136
+        ],
+        "tau_ci_is_approximate_descriptive": true,
+        "reml_criterion_at_optimum": -27.957858767019918,
+        "optimization": {
+          "tau_scaled": 0.229633700200766,
+          "criterion": -27.957858767019918,
+          "optimizer_success": true,
+          "optimizer_message": "Solution found.",
+          "adaptive_upper_scaled": 2.0,
+          "upper_expansions": 1,
+          "tau_at_zero_boundary": false,
+          "design_scale": 210.63554859194375,
+          "internal_standardization": "root mean square of design contrasts"
+        },
+        "cr2_sensitivity": {
+          "method": "CR2 cluster-sandwich sensitivity after whitening by the fitted marginal covariance; t critical value with K-1 degrees of freedom",
+          "beta": 0.000342209155523219,
+          "se_beta": 0.0003255228635692902,
+          "df": 15,
+          "beta_ci": [
+            -0.0003516264041007141,
+            0.001036044715147152
+          ],
+          "minimum_leverage_complement_eigenvalue": 0.9117014820414069
+        },
+        "study_information_weights": [
+          {
+            "study_refid": 1,
+            "weight": 0.07353752457471562
+          },
+          {
+            "study_refid": 2,
+            "weight": 0.005722366897231377
+          },
+          {
+            "study_refid": 3,
+            "weight": 0.08220397301653093
+          },
+          {
+            "study_refid": 4,
+            "weight": 0.07869921718336757
+          },
+          {
+            "study_refid": 5,
+            "weight": 0.08829851795859323
+          },
+          {
+            "study_refid": 6,
+            "weight": 0.0848969649268603
+          },
+          {
+            "study_refid": 7,
+            "weight": 0.056871914280404334
+          },
+          {
+            "study_refid": 8,
+            "weight": 0.08496808078812997
+          },
+          {
+            "study_refid": 9,
+            "weight": 0.05756163559083002
+          },
+          {
+            "study_refid": 10,
+            "weight": 0.07851490170865763
+          },
+          {
+            "study_refid": 11,
+            "weight": 0.0027561829954140136
+          },
+          {
+            "study_refid": 12,
+            "weight": 0.0410232203344341
+          },
+          {
+            "study_refid": 13,
+            "weight": 0.07601630933701499
+          },
+          {
+            "study_refid": 14,
+            "weight": 0.04176494022536192
+          },
+          {
+            "study_refid": 15,
+            "weight": 0.08406998412431096
+          },
+          {
+            "study_refid": 16,
+            "weight": 0.06309426605814308
+          }
+        ],
+        "covariance_condition_numbers": [
+          {
+            "study_refid": 1,
+            "sampling_covariance_condition_number": 40.06671155884525,
+            "marginal_covariance_condition_number": 64.4268022404037
+          },
+          {
+            "study_refid": 2,
+            "sampling_covariance_condition_number": 234.32598652240702,
+            "marginal_covariance_condition_number": 246.69669809893617
+          },
+          {
+            "study_refid": 3,
+            "sampling_covariance_condition_number": 35.84758878651544,
+            "marginal_covariance_condition_number": 34.34125908436244
+          },
+          {
+            "study_refid": 4,
+            "sampling_covariance_condition_number": 44.89599814735722,
+            "marginal_covariance_condition_number": 45.03573078560577
+          },
+          {
+            "study_refid": 5,
+            "sampling_covariance_condition_number": 99.82239255453996,
+            "marginal_covariance_condition_number": 611.0164335834469
+          },
+          {
+            "study_refid": 6,
+            "sampling_covariance_condition_number": 104.41677277132256,
+            "marginal_covariance_condition_number": 344.12760475524914
+          },
+          {
+            "study_refid": 7,
+            "sampling_covariance_condition_number": 19.05964000907017,
+            "marginal_covariance_condition_number": 11.403340979696205
+          },
+          {
+            "study_refid": 8,
+            "sampling_covariance_condition_number": 279.06296871271064,
+            "marginal_covariance_condition_number": 663.155334993945
+          },
+          {
+            "study_refid": 9,
+            "sampling_covariance_condition_number": 50.34327833148191,
+            "marginal_covariance_condition_number": 57.9401109362809
+          },
+          {
+            "study_refid": 10,
+            "sampling_covariance_condition_number": 44.34005814065381,
+            "marginal_covariance_condition_number": 66.38136552857094
+          },
+          {
+            "study_refid": 11,
+            "sampling_covariance_condition_number": 44.076836761116084,
+            "marginal_covariance_condition_number": 43.804943270115544
+          },
+          {
+            "study_refid": 12,
+            "sampling_covariance_condition_number": 71.55554746646295,
+            "marginal_covariance_condition_number": 88.70951856763031
+          },
+          {
+            "study_refid": 13,
+            "sampling_covariance_condition_number": 34.15696173204267,
+            "marginal_covariance_condition_number": 51.7047978998493
+          },
+          {
+            "study_refid": 14,
+            "sampling_covariance_condition_number": 64.01329131855562,
+            "marginal_covariance_condition_number": 62.203372621154124
+          },
+          {
+            "study_refid": 15,
+            "sampling_covariance_condition_number": 59.01029793843271,
+            "marginal_covariance_condition_number": 158.18827124669662
+          },
+          {
+            "study_refid": 16,
+            "sampling_covariance_condition_number": 28.9072596912963,
+            "marginal_covariance_condition_number": 31.619523537319647
+          }
+        ],
+        "or_per_100_bq_m3": 1.0348131878055649,
+        "or_ci_per_100_bq_m3": [
+          0.9705243155625006,
+          1.1033606438141368
+        ],
+        "or_at_150_bq_m3": 1.0526716628062573,
+        "or_ci_at_150_bq_m3": [
+          0.9561138978496354,
+          1.1589807785113486
+        ],
+        "residual_diagnostics": {
+          "q_residual": 138.41179697007792,
+          "reference_df": 55,
+          "descriptive_p_value": 3.913528102986732e-09,
+          "max_abs_decorrelated_residual": 4.2596036785346945,
+          "largest_residual": {
+            "study_refid": 2,
+            "within_study_index": 3,
+            "decorrelated_residual": 4.2596036785346945
+          },
+          "interpretation": "Descriptive diagnostic only: tau, the working covariance, and support-distribution quantities may be estimated."
+        }
+      },
+      "fixed_effects": {
+        "beta": 0.0006958229660627708,
+        "se_beta": 9.304072658223987e-05,
+        "beta_ci": [
+          0.0005134631419615806,
+          0.000878182790163961
+        ],
+        "or_per_100_bq_m3": 1.0720602844976208,
+        "or_ci_per_100_bq_m3": [
+          1.0526873907517709,
+          1.0917897029015842
+        ]
+      }
+    }
+  ],
+  "unscear_2024_distribution_sensitivity": {
+    "rho": 0.5,
+    "n_studies": 16,
+    "n_contrasts": 56,
+    "random_effects": {
+      "beta": 0.0008004470643592396,
+      "se_beta": 0.00027336402000434,
+      "beta_ci": [
+        0.0002646535851507333,
+        0.001336240543567746
+      ],
+      "beta_ci_study_t": [
+        0.00021778544814871949,
+        0.00138310868056976
+      ],
+      "study_t_df": 15,
+      "tau": 0.0005985942634506831,
+      "tau_ci": [
+        0.0,
+        0.0014163964917136781
+      ],
+      "tau_ci_is_approximate_descriptive": true,
+      "reml_criterion_at_optimum": -51.104394842275134,
+      "optimization": {
+        "tau_scaled": 0.11759642938161262,
+        "criterion": -51.104394842275134,
+        "optimizer_success": true,
+        "optimizer_message": "Solution found.",
+        "adaptive_upper_scaled": 1.0,
+        "upper_expansions": 0,
+        "tau_at_zero_boundary": false,
+        "design_scale": 196.45432066741006,
+        "internal_standardization": "root mean square of design contrasts"
+      },
+      "cr2_sensitivity": {
+        "method": "CR2 cluster-sandwich sensitivity after whitening by the fitted marginal covariance; t critical value with K-1 degrees of freedom",
+        "beta": 0.0008004470643592396,
+        "se_beta": 0.0002721041295162768,
+        "df": 15,
+        "beta_ci": [
+          0.00022047084115695633,
+          0.001380423287561523
+        ],
+        "minimum_leverage_complement_eigenvalue": 0.8493108240054462
+      },
+      "study_information_weights": [
+        {
+          "study_refid": 1,
+          "weight": 0.08049841098561604
+        },
+        {
+          "study_refid": 2,
+          "weight": 0.005135704761674152
+        },
+        {
+          "study_refid": 3,
+          "weight": 0.055336526751231324
+        },
+        {
+          "study_refid": 4,
+          "weight": 0.07003863121381836
+        },
+        {
+          "study_refid": 5,
+          "weight": 0.150689175994554
+        },
+        {
+          "study_refid": 6,
+          "weight": 0.13308130370433252
+        },
+        {
+          "study_refid": 7,
+          "weight": 0.04323086539360897
+        },
+        {
+          "study_refid": 8,
+          "weight": 0.10520437348190265
+        },
+        {
+          "study_refid": 9,
+          "weight": 0.03118665510472009
+        },
+        {
+          "study_refid": 10,
+          "weight": 0.07702189111991703
+        },
+        {
+          "study_refid": 11,
+          "weight": 0.0008422551643160941
+        },
+        {
+          "study_refid": 12,
+          "weight": 0.02911619035407488
+        },
+        {
+          "study_refid": 13,
+          "weight": 0.03629539171222592
+        },
+        {
+          "study_refid": 14,
+          "weight": 0.01639523026254701
+        },
+        {
+          "study_refid": 15,
+          "weight": 0.13236905889530087
+        },
+        {
+          "study_refid": 16,
+          "weight": 0.03355833510016005
+        }
+      ],
+      "covariance_condition_numbers": [
+        {
+          "study_refid": 1,
+          "sampling_covariance_condition_number": 6.0041221866093135,
+          "marginal_covariance_condition_number": 8.26453454247205
+        },
+        {
+          "study_refid": 2,
+          "sampling_covariance_condition_number": 45.79717802452028,
+          "marginal_covariance_condition_number": 46.594789258699016
+        },
+        {
+          "study_refid": 3,
+          "sampling_covariance_condition_number": 5.271328339108623,
+          "marginal_covariance_condition_number": 4.525114725983069
+        },
+        {
+          "study_refid": 4,
+          "sampling_covariance_condition_number": 6.113701682219197,
+          "marginal_covariance_condition_number": 5.512806593519001
+        },
+        {
+          "study_refid": 5,
+          "sampling_covariance_condition_number": 15.975843611275128,
+          "marginal_covariance_condition_number": 34.166468463050485
+        },
+        {
+          "study_refid": 6,
+          "sampling_covariance_condition_number": 15.63852893000286,
+          "marginal_covariance_condition_number": 34.44018537223001
+        },
+        {
+          "study_refid": 7,
+          "sampling_covariance_condition_number": 3.016938578010565,
+          "marginal_covariance_condition_number": 3.080137596240538
+        },
+        {
+          "study_refid": 8,
+          "sampling_covariance_condition_number": 44.94559858145657,
+          "marginal_covariance_condition_number": 60.69886456575018
+        },
+        {
+          "study_refid": 9,
+          "sampling_covariance_condition_number": 7.891284429338201,
+          "marginal_covariance_condition_number": 8.822202000855022
+        },
+        {
+          "study_refid": 10,
+          "sampling_covariance_condition_number": 6.0344903184777134,
+          "marginal_covariance_condition_number": 7.314155362770601
+        },
+        {
+          "study_refid": 11,
+          "sampling_covariance_condition_number": 6.688785613273997,
+          "marginal_covariance_condition_number": 6.704187982779312
+        },
+        {
+          "study_refid": 12,
+          "sampling_covariance_condition_number": 12.006491307063635,
+          "marginal_covariance_condition_number": 13.883308482648848
+        },
+        {
+          "study_refid": 13,
+          "sampling_covariance_condition_number": 4.977716434704818,
+          "marginal_covariance_condition_number": 5.517543604253517
+        },
+        {
+          "study_refid": 14,
+          "sampling_covariance_condition_number": 9.000776565549707,
+          "marginal_covariance_condition_number": 9.330509689843433
+        },
+        {
+          "study_refid": 15,
+          "sampling_covariance_condition_number": 7.766844011600637,
+          "marginal_covariance_condition_number": 13.631298205011504
+        },
+        {
+          "study_refid": 16,
+          "sampling_covariance_condition_number": 4.133824025789285,
+          "marginal_covariance_condition_number": 4.284104418233345
+        }
+      ],
+      "or_per_100_bq_m3": 1.0833354986614172,
+      "or_ci_per_100_bq_m3": [
+        1.0268186761218758,
+        1.1429630468862662
+      ],
+      "or_at_150_bq_m3": 1.1275724636632318,
+      "or_ci_at_150_bq_m3": [
+        1.0404965360991265,
+        1.221935505502196
+      ],
+      "residual_diagnostics": {
+        "q_residual": 53.27040314322806,
+        "reference_df": 55,
+        "descriptive_p_value": 0.5409729909084396,
+        "max_abs_decorrelated_residual": 2.418287471159598,
+        "largest_residual": {
+          "study_refid": 16,
+          "within_study_index": 1,
+          "decorrelated_residual": 2.418287471159598
+        },
+        "interpretation": "Descriptive diagnostic only: tau, the working covariance, and support-distribution quantities may be estimated."
+      }
+    },
+    "fixed_effects": {
+      "beta": 0.0008092695688361439,
+      "se_beta": 0.00018632874546296456,
+      "beta_ci": [
+        0.0004440652277287334,
+        0.0011744739099435544
+      ],
+      "or_per_100_bq_m3": 1.084291693629807,
+      "or_ci_per_100_bq_m3": [
+        1.0454072503719503,
+        1.1246224631178825
+      ]
+    }
+  },
+  "leave_one_study_out": [
+    {
+      "omitted_study": "Blot1990",
+      "n_studies": 15,
+      "n_contrasts": 53,
+      "beta": 0.0008859423439781142,
+      "se_beta": 0.00022135739142007624,
+      "beta_ci": [
+        0.0004520818567947648,
+        0.0013198028311614636
+      ],
+      "tau": 0.0003503268217641849,
+      "or_per_100_bq_m3": 1.0926372117689336,
+      "or_ci_per_100_bq_m3": [
+        1.0462456505991482,
+        1.1410858203888443
+      ]
+    },
+    {
+      "omitted_study": "Schoenberg1990",
+      "n_studies": 15,
+      "n_contrasts": 53,
+      "beta": 0.0007652126730449703,
+      "se_beta": 0.00023918062809200763,
+      "beta_ci": [
+        0.0002964186419846353,
+        0.0012340067041053053
+      ],
+      "tau": 0.00046960044037050366,
+      "or_per_100_bq_m3": 1.0795251486830828,
+      "or_ci_per_100_bq_m3": [
+        1.0300855573688588,
+        1.1313376236590882
+      ]
+    },
+    {
+      "omitted_study": "Pershagen1992",
+      "n_studies": 15,
+      "n_contrasts": 53,
+      "beta": 0.0007032091204940869,
+      "se_beta": 0.0002481630451449868,
+      "beta_ci": [
+        0.00021680955200991281,
+        0.0011896086889782611
+      ],
+      "tau": 0.0004625586438254111,
+      "or_per_100_bq_m3": 1.0728524172844611,
+      "or_ci_per_100_bq_m3": [
+        1.021917694929036,
+        1.1263258430543566
+      ]
+    },
+    {
+      "omitted_study": "Alavanja1994",
+      "n_studies": 15,
+      "n_contrasts": 52,
+      "beta": 0.0007439240855738124,
+      "se_beta": 0.00025481703420213473,
+      "beta_ci": [
+        0.0002444826985376284,
+        0.0012433654726099965
+      ],
+      "tau": 0.000508240083063881,
+      "or_per_100_bq_m3": 1.0772294366179542,
+      "or_ci_per_100_bq_m3": [
+        1.0247495792904628,
+        1.1323969119555166
+      ]
+    },
+    {
+      "omitted_study": "Pershagen1994",
+      "n_studies": 15,
+      "n_contrasts": 52,
+      "beta": 0.0007443248498422334,
+      "se_beta": 0.0002872736434427183,
+      "beta_ci": [
+        0.0001812685086945054,
+        0.0013073811909899613
+      ],
+      "tau": 0.0005871617281036959,
+      "or_per_100_bq_m3": 1.0772726089897544,
+      "or_ci_per_100_bq_m3": [
+        1.0182921394406406,
+        1.1396692846093035
+      ]
+    },
+    {
+      "omitted_study": "Auvinen1996",
+      "n_studies": 15,
+      "n_contrasts": 52,
+      "beta": 0.000874962142206087,
+      "se_beta": 0.00025163615561628604,
+      "beta_ci": [
+        0.00038175527719816645,
+        0.0013681690072140076
+      ],
+      "tau": 0.0004523205920399272,
+      "or_per_100_bq_m3": 1.0914381324911415,
+      "or_ci_per_100_bq_m3": [
+        1.038913575005888,
+        1.1466181843364587
+      ]
+    },
+    {
+      "omitted_study": "Ruosteenoja1996",
+      "n_studies": 15,
+      "n_contrasts": 54,
+      "beta": 0.0007666710179313245,
+      "se_beta": 0.00024679525781664115,
+      "beta_ci": [
+        0.0002829523126107079,
+        0.0012503897232519412
+      ],
+      "tau": 0.0004920843727692383,
+      "or_per_100_bq_m3": 1.0796825921611757,
+      "or_ci_per_100_bq_m3": [
+        1.0286993437988814,
+        1.1331926153573804
+      ]
+    },
+    {
+      "omitted_study": "Darby1998",
+      "n_studies": 15,
+      "n_contrasts": 51,
+      "beta": 0.0009023000601633496,
+      "se_beta": 0.0002268528943363748,
+      "beta_ci": [
+        0.000457668387264055,
+        0.0013469317330626442
+      ],
+      "tau": 0.0003385926125755302,
+      "or_per_100_bq_m3": 1.0944259793180247,
+      "or_ci_per_100_bq_m3": [
+        1.0468303022131888,
+        1.1441856637832493
+      ]
+    },
+    {
+      "omitted_study": "Alavanja1999",
+      "n_studies": 15,
+      "n_contrasts": 53,
+      "beta": 0.0008305750829779603,
+      "se_beta": 0.00023940499068360582,
+      "beta_ci": [
+        0.0003613413012380929,
+        0.0012998088647178277
+      ],
+      "tau": 0.000458327095598792,
+      "or_per_100_bq_m3": 1.0866042955148743,
+      "or_ci_per_100_bq_m3": [
+        1.0367949025935588,
+        1.1388066165042037
+      ]
+    },
+    {
+      "omitted_study": "Field2000",
+      "n_studies": 15,
+      "n_contrasts": 52,
+      "beta": 0.0007402552739882929,
+      "se_beta": 0.0002563145016573659,
+      "beta_ci": [
+        0.0002378788507398558,
+        0.0012426316972367298
+      ],
+      "tau": 0.0005106944275986786,
+      "or_per_100_bq_m3": 1.0768342939238584,
+      "or_ci_per_100_bq_m3": [
+        1.0240730736668107,
+        1.132313822507328
+      ]
+    },
+    {
+      "omitted_study": "Sobue2000",
+      "n_studies": 15,
+      "n_contrasts": 53,
+      "beta": 0.0007893496019701498,
+      "se_beta": 0.0002385622128795639,
+      "beta_ci": [
+        0.0003217676647262045,
+        0.001256931539214095
+      ],
+      "tau": 0.0004685795629114935,
+      "or_per_100_bq_m3": 1.0821339380033255,
+      "or_ci_per_100_bq_m3": [
+        1.0327000359146208,
+        1.133934171641105
+      ]
+    },
+    {
+      "omitted_study": "Kreienbrock2001",
+      "n_studies": 15,
+      "n_contrasts": 53,
+      "beta": 0.0007944705911224748,
+      "se_beta": 0.00024544362442056216,
+      "beta_ci": [
+        0.00031340108725817295,
+        0.0012755400949867766
+      ],
+      "tau": 0.0004881910923965148,
+      "or_per_100_bq_m3": 1.0826882395356063,
+      "or_ci_per_100_bq_m3": [
+        1.0318363807717115,
+        1.1360462238712794
+      ]
+    },
+    {
+      "omitted_study": "Lagarde2001",
+      "n_studies": 15,
+      "n_contrasts": 53,
+      "beta": 0.0007244518158421243,
+      "se_beta": 0.000247531992035387,
+      "beta_ci": [
+        0.0002392891114527658,
+        0.0012096145202314828
+      ],
+      "tau": 0.00047795683854579175,
+      "or_per_100_bq_m3": 1.0751338673393382,
+      "or_ci_per_100_bq_m3": [
+        1.0242175048531468,
+        1.128581406998875
+      ]
+    },
+    {
+      "omitted_study": "Pisa2001",
+      "n_studies": 15,
+      "n_contrasts": 52,
+      "beta": 0.000800229120831185,
+      "se_beta": 0.00024133589615032733,
+      "beta_ci": [
+        0.00032721076437654343,
+        0.0012732474772858265
+      ],
+      "tau": 0.0004752301180152101,
+      "or_per_100_bq_m3": 1.0833118883226396,
+      "or_ci_per_100_bq_m3": [
+        1.0332622978435635,
+        1.1357858017566431
+      ]
+    },
+    {
+      "omitted_study": "Wang2002",
+      "n_studies": 15,
+      "n_contrasts": 51,
+      "beta": 0.0006936242453053605,
+      "se_beta": 0.0002547845983267737,
+      "beta_ci": [
+        0.00019424643258488417,
+        0.001193002058025837
+      ],
+      "tau": 0.00046960001114084663,
+      "or_per_100_bq_m3": 1.071824594289346,
+      "or_ci_per_100_bq_m3": [
+        1.0196145291370609,
+        1.1267081118349713
+      ]
+    },
+    {
+      "omitted_study": "BarrosDios2002",
+      "n_studies": 15,
+      "n_contrasts": 53,
+      "beta": 0.0007398993925600359,
+      "se_beta": 0.00024202744368945182,
+      "beta_ci": [
+        0.0002655256029287104,
+        0.0012142731821913615
+      ],
+      "tau": 0.0004705265710171281,
+      "or_per_100_bq_m3": 1.0767959720731124,
+      "or_ci_per_100_bq_m3": [
+        1.0269082204400648,
+        1.1291072974135885
+      ]
+    }
+  ],
+  "point_score_sensitivity": [
+    {
+      "rho": 0.5,
+      "n_studies": 16,
+      "n_contrasts": 56,
+      "random_effects": {
+        "beta": 0.0009685415955698354,
+        "se_beta": 0.00037224327596331087,
+        "beta_ci": [
+          0.0002389447746817461,
+          0.0016981384164579246
+        ],
+        "beta_ci_study_t": [
+          0.0001751238341803228,
+          0.001761959356959348
+        ],
+        "study_t_df": 15,
+        "tau": 0.0008872761950748782,
+        "tau_ci": [
+          0.000219166360533137,
+          0.00204282084155165
+        ],
+        "tau_ci_is_approximate_descriptive": true,
+        "reml_criterion_at_optimum": -50.4283398769361,
+        "optimization": {
+          "tau_scaled": 0.17548809592062317,
+          "criterion": -50.4283398769361,
+          "optimizer_success": true,
+          "optimizer_message": "Solution found.",
+          "adaptive_upper_scaled": 1.0,
+          "upper_expansions": 0,
+          "tau_at_zero_boundary": false,
+          "design_scale": 197.78294165303683,
+          "internal_standardization": "root mean square of design contrasts"
+        },
+        "cr2_sensitivity": {
+          "method": "CR2 cluster-sandwich sensitivity after whitening by the fitted marginal covariance; t critical value with K-1 degrees of freedom",
+          "beta": 0.0009685415955698354,
+          "se_beta": 0.00037016626126619385,
+          "df": 15,
+          "beta_ci": [
+            0.00017955088621261284,
+            0.001757532304927058
+          ],
+          "minimum_leverage_complement_eigenvalue": 0.8417866274591871
+        },
+        "study_information_weights": [
+          {
+            "study_refid": 1,
+            "weight": 0.08645437279711621
+          },
+          {
+            "study_refid": 2,
+            "weight": 0.012093877743288944
+          },
+          {
+            "study_refid": 3,
+            "weight": 0.04478926582516175
+          },
+          {
+            "study_refid": 4,
+            "weight": 0.04195849949806976
+          },
+          {
+            "study_refid": 5,
+            "weight": 0.15435672975727877
+          },
+          {
+            "study_refid": 6,
+            "weight": 0.15821337254081272
+          },
+          {
+            "study_refid": 7,
+            "weight": 0.03245296003894876
+          },
+          {
+            "study_refid": 8,
+            "weight": 0.13330609868089516
+          },
+          {
+            "study_refid": 9,
+            "weight": 0.024423576543603335
+          },
+          {
+            "study_refid": 10,
+            "weight": 0.06577432082193707
+          },
+          {
+            "study_refid": 11,
+            "weight": 0.0013613783045186567
+          },
+          {
+            "study_refid": 12,
+            "weight": 0.0437477927045727
+          },
+          {
+            "study_refid": 13,
+            "weight": 0.032454469264682255
+          },
+          {
+            "study_refid": 14,
+            "weight": 0.02131748570155884
+          },
+          {
+            "study_refid": 15,
+            "weight": 0.12721431733351152
+          },
+          {
+            "study_refid": 16,
+            "weight": 0.0200814824440436
+          }
+        ],
+        "covariance_condition_numbers": [
+          {
+            "study_refid": 1,
+            "sampling_covariance_condition_number": 6.0041221866093135,
+            "marginal_covariance_condition_number": 10.157221708951031
+          },
+          {
+            "study_refid": 2,
+            "sampling_covariance_condition_number": 45.79717802452028,
+            "marginal_covariance_condition_number": 48.6726634815333
+          },
+          {
+            "study_refid": 3,
+            "sampling_covariance_condition_number": 5.271328339108623,
+            "marginal_covariance_condition_number": 5.076559651878905
+          },
+          {
+            "study_refid": 4,
+            "sampling_covariance_condition_number": 6.113701682219197,
+            "marginal_covariance_condition_number": 5.815366344113842
+          },
+          {
+            "study_refid": 5,
+            "sampling_covariance_condition_number": 15.975843611275128,
+            "marginal_covariance_condition_number": 52.50915872591579
+          },
+          {
+            "study_refid": 6,
+            "sampling_covariance_condition_number": 15.63852893000286,
+            "marginal_covariance_condition_number": 106.0728410427857
+          },
+          {
+            "study_refid": 7,
+            "sampling_covariance_condition_number": 3.016938578010565,
+            "marginal_covariance_condition_number": 3.3406438833881724
+          },
+          {
+            "study_refid": 8,
+            "sampling_covariance_condition_number": 44.94559858145657,
+            "marginal_covariance_condition_number": 85.09455201730282
+          },
+          {
+            "study_refid": 9,
+            "sampling_covariance_condition_number": 7.891284429338201,
+            "marginal_covariance_condition_number": 8.963817333735498
+          },
+          {
+            "study_refid": 10,
+            "sampling_covariance_condition_number": 6.0344903184777134,
+            "marginal_covariance_condition_number": 7.86165342381579
+          },
+          {
+            "study_refid": 11,
+            "sampling_covariance_condition_number": 6.688785613273997,
+            "marginal_covariance_condition_number": 6.724643112021247
+          },
+          {
+            "study_refid": 12,
+            "sampling_covariance_condition_number": 12.006491307063635,
+            "marginal_covariance_condition_number": 15.719348003319386
+          },
+          {
+            "study_refid": 13,
+            "sampling_covariance_condition_number": 4.977716434704818,
+            "marginal_covariance_condition_number": 5.723683736451054
+          },
+          {
+            "study_refid": 14,
+            "sampling_covariance_condition_number": 9.000776565549707,
+            "marginal_covariance_condition_number": 9.692016995202898
+          },
+          {
+            "study_refid": 15,
+            "sampling_covariance_condition_number": 7.766844011600637,
+            "marginal_covariance_condition_number": 18.089183903504534
+          },
+          {
+            "study_refid": 16,
+            "sampling_covariance_condition_number": 4.133824025789285,
+            "marginal_covariance_condition_number": 4.261705978577548
+          }
+        ],
+        "or_per_100_bq_m3": 1.1016996895333835,
+        "or_ci_per_100_bq_m3": [
+          1.0241822378854917,
+          1.185084217457065
+        ],
+        "or_at_150_bq_m3": 1.1563647397916341,
+        "or_ci_at_150_bq_m3": [
+          1.0364917736519723,
+          1.2901013258619112
+        ],
+        "residual_diagnostics": {
+          "q_residual": 51.98182385628199,
+          "reference_df": 55,
+          "descriptive_p_value": 0.5906811704968229,
+          "max_abs_decorrelated_residual": 2.4090855427402187,
+          "largest_residual": {
+            "study_refid": 16,
+            "within_study_index": 1,
+            "decorrelated_residual": 2.4090855427402187
+          },
+          "interpretation": "Descriptive diagnostic only: tau, the working covariance, and support-distribution quantities may be estimated."
+        }
+      },
+      "fixed_effects": {
+        "beta": 0.0006609634844739799,
+        "se_beta": 0.00017655207026931498,
+        "beta_ci": [
+          0.00031492142674612256,
+          0.0010070055422018373
+        ],
+        "or_per_100_bq_m3": 1.0683296441100074,
+        "or_ci_per_100_bq_m3": [
+          1.0319932668568939,
+          1.1059454214854703
+        ]
+      },
+      "bounded_score": "midpoint",
+      "right_open_score": "1.2 times lower bound"
+    },
+    {
+      "rho": 0.5,
+      "n_studies": 16,
+      "n_contrasts": 56,
+      "random_effects": {
+        "beta": 0.0007692671577064421,
+        "se_beta": 0.00029053906412786397,
+        "beta_ci": [
+          0.00019981059201582875,
+          0.0013387237233970554
+        ],
+        "beta_ci_study_t": [
+          0.00014999780150387544,
+          0.0013885365139090088
+        ],
+        "study_t_df": 15,
+        "tau": 0.0006682506135174234,
+        "tau_ci": [
+          7.44599290846154e-05,
+          0.0015883077740515884
+        ],
+        "tau_ci_is_approximate_descriptive": true,
+        "reml_criterion_at_optimum": -50.48890414443613,
+        "optimization": {
+          "tau_scaled": 0.1480300392547988,
+          "criterion": -50.48890414443613,
+          "optimizer_success": true,
+          "optimizer_message": "Solution found.",
+          "adaptive_upper_scaled": 1.0,
+          "upper_expansions": 0,
+          "tau_at_zero_boundary": false,
+          "design_scale": 221.5187479972874,
+          "internal_standardization": "root mean square of design contrasts"
+        },
+        "cr2_sensitivity": {
+          "method": "CR2 cluster-sandwich sensitivity after whitening by the fitted marginal covariance; t critical value with K-1 degrees of freedom",
+          "beta": 0.0007692671577064421,
+          "se_beta": 0.00028849935594117514,
+          "df": 15,
+          "beta_ci": [
+            0.000154345336591467,
+            0.0013841889788214173
+          ],
+          "minimum_leverage_complement_eigenvalue": 0.8422515528828779
+        },
+        "study_information_weights": [
+          {
+            "study_refid": 1,
+            "weight": 0.08856350378362988
+          },
+          {
+            "study_refid": 2,
+            "weight": 0.007593308590353212
+          },
+          {
+            "study_refid": 3,
+            "weight": 0.04893400892329362
+          },
+          {
+            "study_refid": 4,
+            "weight": 0.04374563379760818
+          },
+          {
+            "study_refid": 5,
+            "weight": 0.15672483928085
+          },
+          {
+            "study_refid": 6,
+            "weight": 0.1577484471171219
+          },
+          {
+            "study_refid": 7,
+            "weight": 0.03495631130234036
+          },
+          {
+            "study_refid": 8,
+            "weight": 0.1258314225630759
+          },
+          {
+            "study_refid": 9,
+            "weight": 0.023329269892673823
+          },
+          {
+            "study_refid": 10,
+            "weight": 0.06635294602153949
+          },
+          {
+            "study_refid": 11,
+            "weight": 0.0013575692241448057
+          },
+          {
+            "study_refid": 12,
+            "weight": 0.03955226802591058
+          },
+          {
+            "study_refid": 13,
+            "weight": 0.03225768804496479
+          },
+          {
+            "study_refid": 14,
+            "weight": 0.019800368961892887
+          },
+          {
+            "study_refid": 15,
+            "weight": 0.1328844683568856
+          },
+          {
+            "study_refid": 16,
+            "weight": 0.020367946113715032
+          }
+        ],
+        "covariance_condition_numbers": [
+          {
+            "study_refid": 1,
+            "sampling_covariance_condition_number": 6.0041221866093135,
+            "marginal_covariance_condition_number": 9.29907341065431
+          },
+          {
+            "study_refid": 2,
+            "sampling_covariance_condition_number": 45.79717802452028,
+            "marginal_covariance_condition_number": 47.42745353447213
+          },
+          {
+            "study_refid": 3,
+            "sampling_covariance_condition_number": 5.271328339108623,
+            "marginal_covariance_condition_number": 4.707754970937587
+          },
+          {
+            "study_refid": 4,
+            "sampling_covariance_condition_number": 6.113701682219197,
+            "marginal_covariance_condition_number": 5.511189004112933
+          },
+          {
+            "study_refid": 5,
+            "sampling_covariance_condition_number": 15.975843611275128,
+            "marginal_covariance_condition_number": 45.54076431588612
+          },
+          {
+            "study_refid": 6,
+            "sampling_covariance_condition_number": 15.63852893000286,
+            "marginal_covariance_condition_number": 66.44018928328911
+          },
+          {
+            "study_refid": 7,
+            "sampling_covariance_condition_number": 3.016938578010565,
+            "marginal_covariance_condition_number": 3.1777973984559984
+          },
+          {
+            "study_refid": 8,
+            "sampling_covariance_condition_number": 44.94559858145657,
+            "marginal_covariance_condition_number": 76.77493933888528
+          },
+          {
+            "study_refid": 9,
+            "sampling_covariance_condition_number": 7.891284429338201,
+            "marginal_covariance_condition_number": 8.743531604704375
+          },
+          {
+            "study_refid": 10,
+            "sampling_covariance_condition_number": 6.0344903184777134,
+            "marginal_covariance_condition_number": 7.35218276519234
+          },
+          {
+            "study_refid": 11,
+            "sampling_covariance_condition_number": 6.688785613273997,
+            "marginal_covariance_condition_number": 6.715084391480342
+          },
+          {
+            "study_refid": 12,
+            "sampling_covariance_condition_number": 12.006491307063635,
+            "marginal_covariance_condition_number": 15.096186568481361
+          },
+          {
+            "study_refid": 13,
+            "sampling_covariance_condition_number": 4.977716434704818,
+            "marginal_covariance_condition_number": 5.590306973148434
+          },
+          {
+            "study_refid": 14,
+            "sampling_covariance_condition_number": 9.000776565549707,
+            "marginal_covariance_condition_number": 9.510101644266081
+          },
+          {
+            "study_refid": 15,
+            "sampling_covariance_condition_number": 7.766844011600637,
+            "marginal_covariance_condition_number": 15.1686566469461
+          },
+          {
+            "study_refid": 16,
+            "sampling_covariance_condition_number": 4.133824025789285,
+            "marginal_covariance_condition_number": 4.22990195875282
+          }
+        ],
+        "or_per_100_bq_m3": 1.0799629292415145,
+        "or_ci_per_100_bq_m3": [
+          1.020182016781829,
+          1.1432469004061416
+        ],
+        "or_at_150_bq_m3": 1.122311136207067,
+        "or_ci_at_150_bq_m3": [
+          1.030425257921994,
+          1.2223907331178323
+        ],
+        "residual_diagnostics": {
+          "q_residual": 53.02612168375915,
+          "reference_df": 55,
+          "descriptive_p_value": 0.5504076654405855,
+          "max_abs_decorrelated_residual": 2.4245509575822015,
+          "largest_residual": {
+            "study_refid": 16,
+            "within_study_index": 1,
+            "decorrelated_residual": 2.4245509575822015
+          },
+          "interpretation": "Descriptive diagnostic only: tau, the working covariance, and support-distribution quantities may be estimated."
+        }
+      },
+      "fixed_effects": {
+        "beta": 0.0006367182956516887,
+        "se_beta": 0.0001599719322228213,
+        "beta_ci": [
+          0.0003231733084949589,
+          0.0009502632828084184
+        ],
+        "or_per_100_bq_m3": 1.0657425961560094,
+        "or_ci_per_100_bq_m3": [
+          1.0328452069543677,
+          1.099687807634404
+        ]
+      },
+      "bounded_score": "midpoint",
+      "right_open_score": "1.5 times lower bound"
+    },
+    {
+      "rho": 0.5,
+      "n_studies": 16,
+      "n_contrasts": 56,
+      "random_effects": {
+        "beta": 0.0005579138713216073,
+        "se_beta": 0.00020149251315627054,
+        "beta_ci": [
+          0.00016298854553531699,
+          0.0009528391971078975
+        ],
+        "beta_ci_study_t": [
+          0.0001284427457210685,
+          0.000987384996922146
+        ],
+        "study_t_df": 15,
+        "tau": 0.00042425650907157534,
+        "tau_ci": [
+          0.0,
+          0.0010996870941901633
+        ],
+        "tau_ci_is_approximate_descriptive": true,
+        "reml_criterion_at_optimum": -49.92398482872547,
+        "optimization": {
+          "tau_scaled": 0.11304663969229443,
+          "criterion": -49.92398482872547,
+          "optimizer_success": true,
+          "optimizer_message": "Solution found.",
+          "adaptive_upper_scaled": 1.0,
+          "upper_expansions": 0,
+          "tau_at_zero_boundary": false,
+          "design_scale": 266.4582328735058,
+          "internal_standardization": "root mean square of design contrasts"
+        },
+        "cr2_sensitivity": {
+          "method": "CR2 cluster-sandwich sensitivity after whitening by the fitted marginal covariance; t critical value with K-1 degrees of freedom",
+          "beta": 0.0005579138713216073,
+          "se_beta": 0.00019962684285929682,
+          "df": 15,
+          "beta_ci": [
+            0.00013241932782771668,
+            0.0009834084148154978
+          ],
+          "minimum_leverage_complement_eigenvalue": 0.8337948236721604
+        },
+        "study_information_weights": [
+          {
+            "study_refid": 1,
+            "weight": 0.09161290169066502
+          },
+          {
+            "study_refid": 2,
+            "weight": 0.0037417995142328005
+          },
+          {
+            "study_refid": 3,
+            "weight": 0.05130290049166367
+          },
+          {
+            "study_refid": 4,
+            "weight": 0.043804503524248646
+          },
+          {
+            "study_refid": 5,
+            "weight": 0.1662051763278396
+          },
+          {
+            "study_refid": 6,
+            "weight": 0.15118177156454868
+          },
+          {
+            "study_refid": 7,
+            "weight": 0.03579912167712228
+          },
+          {
+            "study_refid": 8,
+            "weight": 0.11525260325225
+          },
+          {
+            "study_refid": 9,
+            "weight": 0.02175153243437297
+          },
+          {
+            "study_refid": 10,
+            "weight": 0.06661010745804374
+          },
+          {
+            "study_refid": 11,
+            "weight": 0.0012721842523054341
+          },
+          {
+            "study_refid": 12,
+            "weight": 0.03637590026984864
+          },
+          {
+            "study_refid": 13,
+            "weight": 0.031292420614056043
+          },
+          {
+            "study_refid": 14,
+            "weight": 0.01789379245501654
+          },
+          {
+            "study_refid": 15,
+            "weight": 0.14654053732249644
+          },
+          {
+            "study_refid": 16,
+            "weight": 0.01936274715128943
+          }
+        ],
+        "covariance_condition_numbers": [
+          {
+            "study_refid": 1,
+            "sampling_covariance_condition_number": 6.0041221866093135,
+            "marginal_covariance_condition_number": 8.084594657153342
+          },
+          {
+            "study_refid": 2,
+            "sampling_covariance_condition_number": 45.79717802452028,
+            "marginal_covariance_condition_number": 46.4540265428549
+          },
+          {
+            "study_refid": 3,
+            "sampling_covariance_condition_number": 5.271328339108623,
+            "marginal_covariance_condition_number": 4.530006476018
+          },
+          {
+            "study_refid": 4,
+            "sampling_covariance_condition_number": 6.113701682219197,
+            "marginal_covariance_condition_number": 5.421236950346219
+          },
+          {
+            "study_refid": 5,
+            "sampling_covariance_condition_number": 15.975843611275128,
+            "marginal_covariance_condition_number": 35.71853096916022
+          },
+          {
+            "study_refid": 6,
+            "sampling_covariance_condition_number": 15.63852893000286,
+            "marginal_covariance_condition_number": 35.59802313210783
+          },
+          {
+            "study_refid": 7,
+            "sampling_covariance_condition_number": 3.016938578010565,
+            "marginal_covariance_condition_number": 3.0184377260267965
+          },
+          {
+            "study_refid": 8,
+            "sampling_covariance_condition_number": 44.94559858145657,
+            "marginal_covariance_condition_number": 65.58901800746214
+          },
+          {
+            "study_refid": 9,
+            "sampling_covariance_condition_number": 7.891284429338201,
+            "marginal_covariance_condition_number": 8.434187227866689
+          },
+          {
+            "study_refid": 10,
+            "sampling_covariance_condition_number": 6.0344903184777134,
+            "marginal_covariance_condition_number": 6.755745808433315
+          },
+          {
+            "study_refid": 11,
+            "sampling_covariance_condition_number": 6.688785613273997,
+            "marginal_covariance_condition_number": 6.703821520232581
+          },
+          {
+            "study_refid": 12,
+            "sampling_covariance_condition_number": 12.006491307063635,
+            "marginal_covariance_condition_number": 14.073722900989598
+          },
+          {
+            "study_refid": 13,
+            "sampling_covariance_condition_number": 4.977716434704818,
+            "marginal_covariance_condition_number": 5.378427026646223
+          },
+          {
+            "study_refid": 14,
+            "sampling_covariance_condition_number": 9.000776565549707,
+            "marginal_covariance_condition_number": 9.297073068525494
+          },
+          {
+            "study_refid": 15,
+            "sampling_covariance_condition_number": 7.766844011600637,
+            "marginal_covariance_condition_number": 11.833618790902024
+          },
+          {
+            "study_refid": 16,
+            "sampling_covariance_condition_number": 4.133824025789285,
+            "marginal_covariance_condition_number": 4.182574484681749
+          }
+        ],
+        "or_per_100_bq_m3": 1.0573770782621572,
+        "or_ci_per_100_bq_m3": [
+          1.0164324054725045,
+          1.099971114276384
+        ],
+        "or_at_150_bq_m3": 1.087288606978738,
+        "or_ci_at_150_bq_m3": [
+          1.0247495915634117,
+          1.1536442898817296
+        ],
+        "residual_diagnostics": {
+          "q_residual": 55.97865397034596,
+          "reference_df": 55,
+          "descriptive_p_value": 0.43790272472353825,
+          "max_abs_decorrelated_residual": 2.4404453946947577,
+          "largest_residual": {
+            "study_refid": 16,
+            "within_study_index": 1,
+            "decorrelated_residual": 2.4404453946947577
+          },
+          "interpretation": "Descriptive diagnostic only: tau, the working covariance, and support-distribution quantities may be estimated."
+        }
+      },
+      "fixed_effects": {
+        "beta": 0.0005459855190879032,
+        "se_beta": 0.00013269696726138198,
+        "beta_ci": [
+          0.0002858994632555945,
+          0.0008060715749202119
+        ],
+        "or_per_100_bq_m3": 1.0561165535873998,
+        "or_ci_per_100_bq_m3": [
+          1.0290025616715712,
+          1.0839449932461154
+        ]
+      },
+      "bounded_score": "midpoint",
+      "right_open_score": "2.0 times lower bound"
+    }
+  ]
+}

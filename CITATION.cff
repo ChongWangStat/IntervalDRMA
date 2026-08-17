@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use these materials, please cite the associated manuscript."
+title: "IntervalDRMA reproducibility materials"
+type: software
+authors:
+  - family-names: Lu
+    given-names: Yangyifan
+  - family-names: Wang
+    given-names: Chong
+    orcid: "https://orcid.org/0000-0003-4489-4344"
+  - family-names: Fonseca Martinez
+    given-names: Brayan Alexander
+  - family-names: Sargeant
+    given-names: Jan M.
+  - family-names: Totton
+    given-names: Sarah C.
+  - family-names: O'Connor
+    given-names: Annette M.
+repository-code: "https://github.com/ChongWangStat/IntervalDRMA"
+license: MIT
+version: 1.0.0
+date-released: 2026-08-16

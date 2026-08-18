@@ -1,7 +1,7 @@
 {
   "status": "complete",
-  "generated_utc": "2026-08-16T20:25:38.656939+00:00",
-  "elapsed_seconds": 688.2724515000009,
+  "generated_utc": "2026-08-18T00:19:00.102443+00:00",
+  "elapsed_seconds": 724.177527700027,
   "operating_system": "Windows-11-10.0.26200-SP0",
   "python": "3.13.9",
   "python_executable": "C:\\Users\\chwang\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
@@ -54,7 +54,7 @@
       "--results",
       "results/analysis_results.json",
       "--output",
-      "manuscript/images/Support_mapping_fragility.pdf"
+      "results/figures/Support_mapping_fragility.pdf"
     ]
   ]
 }

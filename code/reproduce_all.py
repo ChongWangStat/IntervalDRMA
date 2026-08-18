@@ -16,7 +16,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CODE = ROOT / "code"
 RESULTS = ROOT / "results"
-IMAGES = ROOT / "manuscript" / "images"
+FIGURES = RESULTS / "figures"
 MANIFEST = RESULTS / "environment.json"
 PACKAGES = ("numpy", "scipy", "openpyxl", "matplotlib")
 
@@ -100,13 +100,13 @@ def main() -> None:
                     "--results",
                     "results/analysis_results.json",
                     "--output",
-                    "manuscript/images/Support_mapping_fragility.pdf",
+                    "results/figures/Support_mapping_fragility.pdf",
                 ),
             ]
         )
 
     RESULTS.mkdir(parents=True, exist_ok=True)
-    IMAGES.mkdir(parents=True, exist_ok=True)
+    FIGURES.mkdir(parents=True, exist_ok=True)
     start = time.perf_counter()
     status = "complete"
     try:

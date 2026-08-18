@@ -9,7 +9,7 @@ from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / "manuscript" / "images"
+OUTPUT = ROOT / "results" / "figures"
 
 
 def main() -> None:

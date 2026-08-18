@@ -1,7 +1,7 @@
 # Mixed-support simulation
 
-This directory contains the primary-analysis and simulation programs used in
-the revised manuscript. The code uses the observed mixture of 28 positive-width
+This directory contains the primary-analysis and simulation programs used for
+the IntervalDRMA study. The code uses the observed mixture of 28 positive-width
 and five zero-width exposure-support comparisons.
 
 ## Inputs
@@ -86,7 +86,7 @@ exposure-category frequencies or outcome counts are used.
 Both application scripts also write leave-one-study-out random-effects refits
 to their machine-readable result files.
 
-To regenerate the manuscript's direct score-assumption comparison figure, run:
+To regenerate the direct score-assumption comparison figure, run:
 
 ```text
 python code/make_score_assumption_figure.py
@@ -102,7 +102,7 @@ To regenerate the vector framework and support-fragility figures, run:
 
 ```text
 python code/make_support_to_design_figure.py
-python code/make_support_fragility_figure.py --results results/analysis_results.json --output manuscript/images/Support_mapping_fragility.pdf
+python code/make_support_fragility_figure.py --results results/analysis_results.json --output results/figures/Support_mapping_fragility.pdf
 ```
 
 ## Propagate support-distribution uncertainty
@@ -130,8 +130,8 @@ python code/mixed_support_simulation.py --data-file "path/to/workbook.xlsx" --re
 The random-number seeds are fixed within the script. Simulation results report
 bias, RMSE, Normal-interval and study-count Student-t interval coverage, and
 type-I error in dedicated null-effect settings. A separate generalizability
-experiment resamples empirical study-block configurations at K = 10, 20, and 30. The manuscript
-reports point-estimation error, interval width and coverage, type-I error,
+experiment resamples empirical study-block configurations at K = 10, 20, and 30. The archived
+outputs report point-estimation error, interval width and coverage, type-I error,
 boundary rates, convergence, and Monte Carlo standard errors. Profiled REML criterion values in
 the JSON files are optimization diagnostics within a fixed design mapping and
 must not be compared across mappings that change the fixed-effect design.

@@ -1,7 +1,7 @@
 """Utilities for propagating uncertainty in support-distribution parameters.
 
 The functions implement the delta-method and parametric-bootstrap procedures
-described in the manuscript. They are generic because the external covariance
+used by the IntervalDRMA workflow. They are generic because the external covariance
 matrix for the motivating regional Gamma fits is not available.
 """
 

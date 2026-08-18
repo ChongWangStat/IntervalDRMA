@@ -7,8 +7,6 @@ __pycache__/
 venv/
 *.aux
 *.bbl
-!manuscript/IntervalDRMA_RSM_revised.bbl
-!manuscript/IntervalDRMA_RSM_supplement.bbl
 *.bcf
 *.blg
 *.fdb_latexmk

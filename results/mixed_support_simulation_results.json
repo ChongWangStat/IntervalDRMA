@@ -1692,5 +1692,5 @@
       "scenario": "Nonlinear individual-level logit (curvature 0.10 x log(1 + distance))"
     }
   ],
-  "elapsed_seconds": 661.0344078540802
+  "elapsed_seconds": 696.7065000534058
 }

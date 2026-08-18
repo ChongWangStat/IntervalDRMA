@@ -1,4 +1,4 @@
-"""Reproduce the primary and sensitivity analyses in the manuscript."""
+"""Reproduce the primary and sensitivity analyses."""
 
 from __future__ import annotations
 
@@ -406,7 +406,7 @@ def main(data_file: Path, bootstrap_replicates: int = 2000):
             },
         ],
         # Backward-compatible aliases for archived scripts that used the earlier
-        # four-study-primary presentation.  The manuscript now treats these as
+        # four-study-primary presentation. The current analysis treats these as
         # restriction analyses.
         "afo_primary_explicit_or": {
             "analysis": "Legacy key: strict explicit-support OR restriction",
@@ -438,7 +438,7 @@ def main(data_file: Path, bootstrap_replicates: int = 2000):
                 **full_mixed_proxy,
             },
         ],
-        # Retained for backward reproducibility of earlier manuscript versions.
+        # Retained for backward reproducibility of earlier analysis versions.
         "primary_conditional_mean": full_mixed_proxy,
         "midpoint_comparison": midpoint,
         "effect_measure_sensitivity": {

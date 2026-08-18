@@ -1,4 +1,4 @@
-"""Create the direct support-score comparison figure used in the manuscript."""
+"""Create the direct support-score comparison figure."""
 
 from __future__ import annotations
 
@@ -11,7 +11,7 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 RESULTS = ROOT / "results"
-OUTPUT = ROOT / "manuscript" / "images"
+OUTPUT = RESULTS / "figures"
 
 
 def _forest_panel(ax, labels, estimates, lower, upper, colors, xlabel, null=None, digits=3):

@@ -4,7 +4,7 @@ The analyst first supplies one representative mean for each comparison and
 reference support.  Those means may be reported group means, conditional means
 from an outcome-independent exposure model, or point values for zero-width
 supports.  This module then fits the fixed- and random-slope models used in the
-manuscript without requiring callers to construct internal Study objects.
+analysis without requiring callers to construct internal Study objects.
 """
 
 from __future__ import annotations

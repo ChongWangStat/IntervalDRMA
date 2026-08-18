@@ -3,6 +3,10 @@
 Reproducibility materials for **Contrast-Level Aggregate-Data Dose--Response
 Meta-Analysis for Heterogeneous Exposure Intervals**.
 
+This repository is intentionally limited to the code, data, machine-readable
+results, and generated figures needed to reproduce and validate the analyses.
+Manuscript and journal-submission files are maintained separately.
+
 The method represents every exposure support as an interval with nonnegative
 width. Positive-width intervals are represented by conditional means under a
 working exposure distribution. Exact exposure values are zero-width intervals;
@@ -46,9 +50,9 @@ Uniform within each bounded interval.
 - `code/make_distance_density_figure.py`: vector and high-resolution versions
   of the regional Gamma working-distribution figure.
 - `code/make_support_to_design_figure.py`: vector support-to-design framework
-  diagram used in the manuscript.
+  diagram.
 - `code/make_support_fragility_figure.py`: local support-mapping fragility
-  diagnostic used in the supplement.
+  diagnostic.
 - `code/support_uncertainty.py`: numerical delta-method and parametric-bootstrap
   utilities for propagating first-stage support-distribution uncertainty.
 - `code/test_intervaldrma.py`: 20 deterministic checks of unit rescaling,
@@ -58,11 +62,8 @@ Uniform within each bounded interval.
   and exact agreement with midpoint DRMA under Uniform interval exposure.
 - `code/reproduce_all.py`: one-command reproduction of tests, analyses,
   simulations, figures, and a machine-readable environment manifest.
-- `results/`: machine-readable analysis, simulation, and environment results.
-- `manuscript/`: the single canonical Cambridge/RSM main-manuscript source and
-  compiled PDF, together with the supplement source, bibliography, figures,
-  and compiled supplement PDF. No separate free-format manuscript version is
-  maintained.
+- `results/`: machine-readable analysis, simulation, and environment results,
+  plus reproducibly generated figures in `results/figures/`.
 
 ## Reproduce
 
@@ -83,7 +84,7 @@ python code/mixed_support_simulation.py --replicates 5000 --output results/mixed
 python code/make_score_assumption_figure.py
 python code/make_distance_density_figure.py
 python code/make_support_to_design_figure.py
-python code/make_support_fragility_figure.py --results results/analysis_results.json --output manuscript/images/Support_mapping_fragility.pdf
+python code/make_support_fragility_figure.py --results results/analysis_results.json --output results/figures/Support_mapping_fragility.pdf
 ```
 
 The full simulation uses fixed random-number seeds and may take several minutes.
@@ -110,13 +111,6 @@ outputs is an optimization diagnostic within a fixed design mapping and must
 not be compared across mappings that change the fixed-effect design vector.
 Both empirical-analysis result files also report leave-one-study-out refits for
 influence assessment.
-
-To rebuild the manuscript PDF, run `pdflatex`, `biber`, and then `pdflatex`
-twice on `manuscript/IntervalDRMA_RSM_revised.tex`. The Cambridge journal class,
-bibliography, and figure required for compilation are included.
-
-The included `CUP-JNL-DTM.cls` and `CUP_Logo.pdf` are Cambridge journal-template
-assets and are not covered by this repository's MIT software license.
 
 ## Data provenance
 
@@ -163,5 +157,5 @@ Versioned Zenodo archive: https://doi.org/10.5281/zenodo.21984414
 
 The MIT License applies to the software. The data files contain factual
 numerical information extracted from the cited publications and independently
-organized and processed by the authors. No article text, figures, or table
-images are reproduced.
+organized and processed by the authors. No source-article text, figures, or
+table images are reproduced.

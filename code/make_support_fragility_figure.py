@@ -1,4 +1,4 @@
-"""Create the supplementary support-mapping fragility figure."""
+"""Create the support-mapping fragility figure."""
 
 from __future__ import annotations
 
